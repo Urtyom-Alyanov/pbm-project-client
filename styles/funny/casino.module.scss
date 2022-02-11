@@ -1,0 +1,21 @@
+@import "../vars.scss";
+
+.casinoRat {
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    font-size: 25px;
+    box-shadow: $secCol-300 3pt 3pt;
+    background: linear-gradient(90deg, rgb(245, 186, 24), rgb(238, 219, 46));
+    align-items: center;
+}
+
+.casinoRatAccess {
+    background: linear-gradient(90deg, rgb(24, 245, 35), rgb(46, 238, 120));
+}
+
+.casinoRatError {
+    background: linear-gradient(90deg, rgb(245, 112, 24), rgb(238, 46, 94));
+}

@@ -1,0 +1,28 @@
+@import "../styles/vars.scss";
+
+.navBtnText {
+    font-weight: 600;
+    font-size: medium;
+}
+
+.navBtn {
+    display: block;
+    transition-duration: 0.25s;
+    &:hover {
+        padding-left: 3pt;
+        color: rgb(78, 78, 78);
+    }
+    &:active {
+        color: rgb(26, 26, 26);
+    }
+    &.active {
+        color: $firstCol;
+        &:hover {
+            padding-left: 0;
+            color: $firstCol;
+        }
+        &:active {
+            color: $firstCol;
+        }
+    }
+}

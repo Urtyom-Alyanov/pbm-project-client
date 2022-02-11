@@ -1,0 +1,151 @@
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./vars.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'PT Sans Caption', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.red-text {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-3xl {
+  font-size: 32px;
+}
+.text-xl {
+  font-size: 20px;
+}
+
+header {
+  padding: 5pt;
+  background-color: white;
+  box-shadow: $secCol-300 3pt 0 5pt;
+}
+
+.stick-top {
+  position: sticky;
+  top: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+.dir-row {
+  flex-direction: row;
+}
+.just-cont-betw {
+  justify-content: space-between;
+}
+.just-cont-end {
+  justify-content: flex-end;
+}
+.alig-itm-cen {
+  align-items: center;
+}
+.flex-full {
+  flex: 1 1 auto;
+}
+
+
+.btn {
+  padding: 6pt;
+  cursor: pointer;
+  border-radius: 2pt;
+  transition-duration: 0.05s;
+  background: inherit;
+  border: inherit;
+  &.btn-first {
+    background-color: $firstCol;
+    color: $secCol;
+    &:hover {
+      background-color: $firstCol-100;
+    }
+    &:active {
+      background-color: $firstCol-200;
+    }
+  }
+  &.btn-second {
+    background-color: $secCol-200;
+    &:hover {
+      background-color: $secCol-100;
+    }
+    &:active {
+      background-color: $secCol-300;
+    }
+  }
+}
+
+.ml-1 {
+  margin-left: 2pt;
+}
+.mt-1 {
+  margin-top: 2pt;
+}
+.m-none {
+  margin: 0;
+}
+
+.cur-point { cursor: pointer; }
+
+.back-sec {
+  background-color: $secCol;
+}
+
+.p-3 {
+  padding: 6pt;
+}
+.p-none {
+  padding: 0;
+}
+
+.sh-q-3 {
+  box-shadow: $secCol-300 3pt 3pt;
+}
+
+.r-sm {
+  border-radius: 2pt;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 5pt;
+  border-radius: 0;
+  border: none;
+  border-bottom: $black 2pt solid;
+  box-shadow: $secCol-300 2pt 2pt;
+  &:focus {
+    border-bottom: $firstCol-100 2pt solid;
+    outline: none;
+  }
+}
+
+textarea.input {
+  resize: vertical;
+}

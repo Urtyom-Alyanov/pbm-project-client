@@ -1,0 +1,41 @@
+@import "../vars.scss";
+
+.gqlBlock {
+    background-color: rgb(239, 178, 252);
+    border: rgb(201, 57, 236) solid 1pt;
+    height: 100%;
+    border-radius: 2pt;
+    min-height: 150px;
+    padding: 10pt;
+    font-weight: 600;
+    font-size: large;
+    user-select: none;
+    display: flex;
+    box-shadow: $secCol-300 3pt 3pt;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restBlock {
+    background-color: rgb(248, 230, 172);
+    border: rgb(235, 195, 63) solid 1pt;
+    border-radius: 2pt;
+    height: 100%;
+    padding: 10pt;
+    min-height: 150px;
+    font-weight: 600;
+    display: flex;
+    font-size: large;
+    box-shadow: $secCol-300 3pt 3pt;
+    cursor: pointer;
+    flex-direction: column;
+    user-select: none;
+    transition-duration: 0.25s;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: rgb(235, 195, 63);
+    }
+}
